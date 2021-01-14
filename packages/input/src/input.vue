@@ -203,7 +203,11 @@
       _elFormItemSize() {
         return (this.elFormItem || {}).elFormItemSize;
       },
-      // 表单校验相关，看完表单的源码再倒回来结合看是什么意思
+      // 表单校验相关
+      // validateState的值 对应
+      // validating - el-icon-loading
+      // success - el-icon-circle-check
+      // error - el-icon-circle-close
       validateState() {
         return this.elFormItem ? this.elFormItem.validateState : '';
       },
