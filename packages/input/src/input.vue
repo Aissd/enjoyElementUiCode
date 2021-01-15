@@ -227,6 +227,7 @@
       inputSize() {
         return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
       },
+      // 是否禁用
       inputDisabled() {
         return this.disabled || (this.elForm || {}).disabled;
       },
@@ -266,6 +267,7 @@
 
         return (this.value || '').length;
       },
+      // 输入内容是否超出
       inputExceed() {
         // show exceed style if length of initial value greater then maxlength
         return this.isWordLimitVisible &&
